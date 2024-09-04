@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlighter</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="nav" id="nav">
+        <h1>Highlighter</h1>
+        <button type="button" id="logout-button" class="logout-button">
+            <img src="icons/logout.png" alt="logout icon" class="icon">
+        </button>
+    </section>
+    <section class="body">
+        <div class="profile-header">
+            <h1 id="profile-name">Profile</h1>
+        </div>
+        <div class="content" id="content">
+            <div class="left-panel">
+                <div id="profile-container">
+                    <form id="profile">
+                        <div class="input-container" id="input-container">
+                            <input class="inputName" type="text" id="firstName" placeholder="First Name">
+                            <input class="inputName" type="text" id="lastName" placeholder="Last Name">
+                            <button type="button" id="save-changes-button" class="save-changes-button">
+                                <img src="icons/refresh.png" class="icon" alt="refresh changes">
+                            </button>
+                        </div>
+                        <div class="button-group">
+                            <button type="button" class="password-button">
+                                Change Password | 
+                                <img src="icons/password.png" alt="password icon" class="icon">
+                            </button>
+                            <button type="button" class="delete-button">
+                                Delete My Account | 
+                                <img src="icons/delete.png" alt="delete icon" class="icon">
+                            </button>
+                        </div>
+                        <div id="password-change-form" class="form-container" style="display: none;">
+                            <label for="oldPassword">Old Password:</label>
+                            <input type="password" id="oldPassword" placeholder="Enter old password" required>
+                            
+                            <label for="newPassword">New Password:</label>
+                            <input type="password" id="newPassword" placeholder="Enter new password" required>
+                            
+                            <label for="confirmPassword">Confirm New Password:</label>
+                            <input type="password" id="confirmPassword" placeholder="Confirm new password" required>
+                            
+                            <button type="button" id="update-password-button">Update Password</button>
+                        </div>                
+                    </form>
+                </div>
+            </div>
+            <div class="right-panel">
+                <h2> Update the 50 Major e-commerce websites visited in Morocco | 
+                    <button id="refresh" class="refresh">
+                        <img src="icons/refresh.png" class="icon" alt="refresh changes">
+                    </button>
+                </h2>
+                <table id="websites-table">
+                    <thead>
+                        <tr>
+                            <th>Favorites</th>
+                            <th>Description</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <!-- Favorites will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="feedback-message"></div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Extension : Highlighter</p>
+    </footer>
+    <script type="module" src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-grey);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+section {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px var(--secondary-purple);
+    text-align: center;
+    width: 350px;
+    height: auto;
+}

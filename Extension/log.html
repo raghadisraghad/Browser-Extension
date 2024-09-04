@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlighter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+    <section class="nav">
+        <h1>Highlighter</h1>
+    </section>
+    <section class="body">
+        <h1>Log in / Sign up</h1>
+        <div id="form-container">
+            <button id="signUp" type="button">Register | 
+                <img src="icons/sign-up.png" alt="Sign up icon" class="icon">
+            </button>
+            <button id="login" type="button">Log in | 
+                <img src="icons/login.png" alt="Login icon" class="icon">
+            </button>
+            <div id="form-content">
+                <!-- Login Form -->
+                <div id="login-form" class="form" style="display: none;">
+                    <h2>Login</h2>
+                    <form id="loginForm">
+                        <label for="login-email">Email:</label>
+                        <input type="email" id="login-email" name="login-email" placeholder="Email..." required>
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" name="login-password" placeholder="password..." required>
+                        <button type="submit">Log In</button>
+                    </form>
+                </div>
+                <!-- Sign Up Form -->
+                <div id="sign-up-form" class="form" style="display: none;">
+                    <h2>Register</h2>
+                    <form id="signUpForm">
+                        <label for="signup-first-name">First Name:</label>
+                        <input type="text" id="signup-first-name" name="signup-first-name" placeholder="first name..." required>
+                        <label for="signup-last-name">Last Name:</label>
+                        <input type="text" id="signup-last-name" name="signup-last-name" placeholder="last name..." required>
+                        <label for="signup-email">Email:</label>
+                        <input type="email" id="signup-email" name="signup-email" placeholder="email..." required>
+                        <label for="signup-password">Password:</label>
+                        <input type="password" id="signup-password" name="signup-password" placeholder="password..." required>
+                        <label for="signup-password2">Confirm Password:</label>
+                        <input type="password" id="signup-password2" name="signup-password2" placeholder="confirm password..." required>
+                        <button type="submit">Register</button>
+                    </form>
+                </div>
+                <!-- Verify Email Form -->
+                <div id="verify-email-form" class="form" style="display: none;">
+                    <h2>Email Verification</h2>
+                    <form id="emailVerify">
+                        <label for="code">Enter Your Verification Code:</label>
+                        <input type="text" id="code" name="code" placeholder="Verification code..." required>
+                        <button id="verify-button" type="button">Verify Code</button>
+                    </form>
+                </div>
+            </div>
+            <div id="feedback-message"></div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Extension : Highlighter</p>
+    </footer>
+    <script type="module" src="log.js"></script>
+</body>
+</html>
