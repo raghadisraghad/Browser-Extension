@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Highlighter",
+    "version": "0.0.4",
+    "description": "Highlights products in product page for the 50 major e-commerce websites used in morocco",
+    "author": "Raghad Ch.",
+    "background": {
+        "scripts": ["background.js"],
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Extension",
+        "default_icon": "icons/default.png"
+    },
+    "permissions": ["tabs","activeTab", "scripting", "storage"],
+    "host_permissions": ["<all_urls>"]
+}
